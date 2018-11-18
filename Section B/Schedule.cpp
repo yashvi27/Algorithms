@@ -9,6 +9,17 @@ struct contestant
 
 void copy(contestant &c1, contestant &c2) //equating 1 element to another
 {
+    /*
+    Objective: the function aims at copying the values of one object of structure contestant to another object of the structure.
+
+    Input Variables:
+        c1: object c1
+        c2: object c2
+
+    Return Value: None
+
+    */
+
 	c1.num = c2.num;
 	c1.stime = c2.stime;
 	c1.btime = c2.btime;
@@ -17,6 +28,19 @@ void copy(contestant &c1, contestant &c2) //equating 1 element to another
 
 bool compare(contestant c1, contestant c2) //function compares the two on the basis of bike time + run time
 {
+    /*
+    Objective: the function aims at comparing the sum of running time and biking time of two objects of structure contestant.
+
+    Input Variables:
+        c1: object c1
+        c2: object c2
+
+    Return Value:
+        True if, c1 < c2
+        else, False
+
+    */
+
 	int s1  = c1.stime;
 	int br1 = c1.btime + c1.rtime;
 	int s2  = c2.stime;
@@ -29,6 +53,16 @@ bool compare(contestant c1, contestant c2) //function compares the two on the ba
 
 void sort(contestant c[], int n)  //insertion sort
 {
+    /*
+    Objective: the function aims at sorting the input on the basis of decreasing running + biking time.
+
+    Input Variables:
+        c: array of objects
+        n: size of the c
+
+    Return Value: None
+
+    */
 
 	int i,j;
 	contestant con;

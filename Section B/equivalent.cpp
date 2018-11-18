@@ -4,6 +4,21 @@ using namespace std;
 
 int check(int c, int *arr, int beg, int end)
 {
+    /*
+    Objective: the function checking whether 'c' is the majority element of all or not.
+
+    Input Variables:
+        c: variable returned from divideInput function
+        *arr: input array
+        beg: start of the array
+        end: end of the array
+
+    Return Value:
+        true, if c is the majority element
+        else, false
+
+    */
+
     int cnt=0;
 
     for(int i=beg; i<=end; i++)
@@ -19,6 +34,18 @@ int check(int c, int *arr, int beg, int end)
 
 int divideInput(int *arr, int beg, int end)
 {
+    /*
+    Objective: the function aims at dividing the input into equal halves and finding whether any two elements taken at a time are equivalent or not.
+    Input Variables:
+        *arr: input array
+        beg: start of the array
+        end: end of the array
+
+    Return Value:
+        c, that is the majority element(if any)
+        else, 0 symbolizing there isn't any majority element
+
+    */
     int c, found, mid;
 
     if(beg==end)   //returning 0 since there is just 1 element in the set
